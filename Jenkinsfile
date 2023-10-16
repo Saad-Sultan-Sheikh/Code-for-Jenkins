@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('version') {
+    stage('Version') {
       steps {
         sh 'python3 --version'
       }
     }
-    stage('Fibonacci') {
+    stage('Build and Run') {
       steps {
         sh 'python3 fibonacci.py'
       }
